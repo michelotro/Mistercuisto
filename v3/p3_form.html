@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="menuv3.css" />
+    <title>Restaurant gastronomique</title>
+</head>
+
+<body>
+    <header>
+        <h1>La Fabrique du Petit Mangé</h1>
+        <img class="img" src="image/devanture.jpg">
+    </header>
+    <nav>
+        <ul id="element">
+            <li><a href="menuv3.html" title="Vous êtes ici">Acceuil</a></li>
+            <li><a href="recettes/recettes.html">Recettes</a></li>
+            <li><a href="p3_form.html">Réservations</a></li>
+            <li><a href="#plan">Plan d'accès</a></li>
+            <li><a href="p4_livre.html">Livre d'Or</a></li>
+            <li><a href="#contact">Nous contacter</a></li>
+        </ul>
+    </nav>
+    <form method="post">
+    <div id="element_form">
+        <div class="element">
+            <h2>Formulaire de réservation</h2>
+            <div class="civilite1">
+                <input type="radio" name="civilite" value="male" />Mr
+                <input type="radio" name="civilite" value="female" />Mme
+                <p>
+                    <label>Nom :</label>
+                    <input type="text" name="nom" placeholder="Nom" required>
+                </p>
+                <p><label>Prénom :</label>
+                    <input type="text" name="prenom" placeholder="Prénom" required>
+                </p>
+                <p>
+                    <label>Télephone</label>
+                    <input type="tel" name="Télephone" placeholder="N° de télephone" required>
+                </p>
+                <p>
+                    <label>e-mail :</label>
+                    <input type="email" name="email" placeholder="votre.email@domaine.com" required>
+                </p>
+                <p>
+                    <label>Confirmation e-mail :</label>
+                    <input type="email" id="email_repeat" placeholder="Confirmez votre email">
+                </p>
+                <p>
+                    <label>Nombre de personnes :</label>
+                    <input type="number" name="personnes" value="1" min="1" max="20" required>
+                </p>
+            </div>
+        </div>
+        <div class="element">
+            <div class="commentaires">
+                <p>
+                    <label>commentaires :</label>
+                </p>
+                <p>
+                    <textarea name="textarea" placeholder="Vos commentaires"></textarea>
+                </p>
+                <div class="submit">
+                    <p>
+                        <input type="submit" value="Envoyer" class="envoi" />
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+    <div id="contact">
+        
+            <div class="adresse">
+                <p>
+                    La Fabrique du Petit Mangé<br />
+                    Rue de la poupée qui tousse<br />
+                    64400 Oloron Sainte Marie
+                </p>
+            
+            </div>
+            <div class="telephone">
+                
+                    <P>
+                        Télephone :<br />
+                        00.00.00.00.00
+                    </P>
+                    <p>
+                        Fax :<br />
+                        00.00.00.00.00
+                    </p>
+                </div>
+            
+            <div class="mail">
+                
+                    <P>
+                        
+                        <a href="mailto:e.mail@domaine.com">Envoyer un mail</a>
+                    </P>
+                </div>
+            
+        
+    </div>
+    <footer class="element">
+        <div id="horaires">
+            <ul class="foot">
+                <li>Horaires d'ouverture :</li>
+                <li>Du Mardi au Samedi</li>
+                <li>De 11h30 à 14h00</li>
+                <li>De 19h00 à 23h00</li>
+                <li>Fermé Dimanche<br /> et Lundi</li>
+            </ul>
+        </div>
+        <div id="logo">
+            <p span class="underline">
+                Pour nous suivre :
+            </p>
+            <div id="logo_fb">
+                <a class="margelogo" href="https://www.pinterest.fr/" target="_blank"><img src="image/pint.png"
+                        alt="logo pinterest" title="Pinterest"></a>
+            </div>
+            <div id="logo_pint">
+                <a class="margelogo" href="https://fr-fr.facebook.com/" target="_blank"><img src="image/fb.png"
+                        alt="logo facebook" title="Facebook"></a>
+            </div>
+            <div id="logo_insta">
+                <a class="margelogo" href="https://www.instagram.com/?hl=fr" target="_blank"><img src="image/insta.png"
+                        alt="logo instagram" title="Instagram"></a>
+            </div>
+        </div>
+        <div id="copy">
+            <p>Copyright <br />© 2019</p>
+        </div>
+        <div id="map">
+            <iframe id="plan"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2908.871121798688!2d-0.6121993620405891!3d43.19121497235811!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd56ffed4530c13f%3A0x717315a1a86db6a!2sLe%20Vigny!5e0!3m2!1sfr!2sfr!4v1568920284967!5m2!1sfr!2sfr"
+                width="200" height="200" frameborder="0" style="border:0;" allowfullscreen="">
+            </iframe>
+        </div>
+    </footer>
+</body>
+
+</html>

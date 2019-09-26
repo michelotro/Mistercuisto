@@ -1,0 +1,257 @@
+body{
+    background-image: url(image/background-tile.png) ;
+    font-family: 'Pinyon Script', cursive;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.img{
+    width: 60vw;
+    margin-left: 18vw;
+    box-shadow: 15px 15px 10px black;
+}
+h1{ 
+    position: relative;
+    margin-bottom: -200px;
+    margin-left: 27.5vw;
+    margin-top: -50px;
+    background-color: black;
+    display: inline-block;
+    padding: 50px 50px 10px 50px;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    box-shadow: 15px 15px 10px black;
+}
+h2{
+    text-decoration: underline;
+    text-align: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+h3{
+    margin-left: 1vw;
+}
+h4{
+    text-align: center;
+    text-decoration: underline;
+}
+.element{
+    background: rgba(236, 236, 236, 0.6);
+    border-radius: 20px;
+    margin: auto;
+    box-shadow: 15px 15px 10px black;
+    
+}
+#element{
+    background: rgba(236, 236, 236, 0.6);
+    border-radius: 20px;
+    margin: auto;
+    box-shadow: 15px 15px 10px black;
+    
+        font-size: 1.2em;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height:10vh;
+        margin: auto;   
+        list-style: none;  
+    
+    
+}
+
+a{
+    text-decoration:none; color: black;
+}
+a:hover{
+    text-decoration: underline; font-size: 1.5em
+}
+a:visited{
+    color: black;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: auto;
+    margin-bottom: 5vh;
+}
+.img_flot{
+    float: left; 
+    margin: 1vh 1vw 1vh 1vw;
+}
+.jour{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.element1{
+    background: rgba(236, 236, 236, 0.6);
+    border-radius: 20px;
+    margin-top: 5vh;
+    height: 180vh;
+    overflow: auto;
+    box-shadow: 15px 15px 10px black;
+    text-align: center;
+}
+.element2{
+    background: rgba(236, 236, 236, 0.6);
+    border-radius: 20px;
+    max-width: 30vw;
+    padding: 5vh 5vw 0vh 5vw;
+    text-align: center;
+    margin-top: 5vh;
+    height: 175vh;
+    overflow: auto;
+    box-shadow: 15px 15px 10px black;
+}
+.chef{
+    margin: auto;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.foot{
+    list-style: none;
+    font-size: 1em;
+    margin: auto;
+    
+}
+#parag{
+    display: flex;
+    flex-direction: column;
+}
+#map{
+    padding: 2vh 2vw 2vh 2vw;    
+}
+.underline{
+    position: absolute;
+    margin:auto;
+    top: -10vh;
+    left: 3vw;
+    text-decoration: underline;
+}
+#logo{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+        /*-----------------------Fin page d'acceuil --------------------------------------------------------------------------------*/
+
+ /*---------------------Recettes------------------------------------*/
+ 
+ #navrecettes{
+    margin-top: 5vh;
+    box-shadow: 15px 15px 10px black;
+    width: 60vw;
+    margin: 5vh auto 5vh auto;
+ }
+ #mardi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ .element_recettes{
+    background: rgba(236, 236, 236, 0.6);
+    border-radius: 20px;
+    text-align: left;
+    box-shadow: 15px 15px 10px black;
+    display: inline;
+}
+ .element_ingred{
+    background: rgba(236, 236, 236, 0.6);
+    border-radius: 20px;
+    margin: auto;
+    text-align: right;
+    box-shadow: 15px 15px 10px black;
+    list-style: none;
+    text-align: left;
+    margin-left: 5vw;
+    
+ }
+ .img_recette{
+     
+     margin-left:  4.5vw;
+     height: 50%;
+     width: 50%;
+ }
+ #lien{
+    color: green;
+}
+ /*--------------------- Fin Recettes------------------------------------*/
+
+ /*-------------------Contact--------------------------------------------------------------*/
+ #element_form{
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+ }
+ .commentaires{
+     text-align: left;
+     margin-top: 5vh;
+     height: 90vh;
+     width: 50vw;
+     padding-left:2vw;
+ }
+ .civilite1{
+     padding-right: 2vw;
+ }
+ textarea{
+     margin-left: 1vw;
+     height: 45vh;
+     width: 45vw;
+ }
+ .submit{
+    text-align: center;
+    margin: auto;
+    padding-top: 5vh;
+ }
+ #contact{
+    background: rgba(236, 236, 236, 0.6);
+    border-radius: 20px;
+    margin: auto;
+    box-shadow: 15px 15px 10px black;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     align-items: center;
+     margin: auto;
+     margin-bottom:5vh;
+ }
+ /*-------------------------------------Fin contact------------------------------------------*/
+
+ /*----------------Livre d'or-----------------------------------*/
+ 
+#element_livre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: right;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+ }
+ .avis{
+    text-align: left;
+     margin-top: 5vh;
+     height: 90vh;
+     width: 50vw;
+     padding-left:2vw;
+}
+.textarea{
+    margin-left: 1vw;
+    height: 45vh;
+    width: 45vw;
+}
+
+
+
+
