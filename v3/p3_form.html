@@ -6,6 +6,13 @@
     <link href="https://fonts.googleapis.com/css?family=Pinyon+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="menuv3.css" />
     <title>Restaurant gastronomique</title>
+    <script language="javascript">
+        function controle(form1) {
+            var test = document.form1.email.value;
+            var test1 = document.form1.nom.value;
+            alert("mail :" + test + " nom : " + test1);
+        }   
+    </script>
 </head>
 
 <body>
@@ -23,89 +30,93 @@
             <li><a href="#contact">Nous contacter</a></li>
         </ul>
     </nav>
-    <form method="post">
-    <div id="element_form">
-        <div class="element">
-            <h2>Formulaire de réservation</h2>
-            <div class="civilite1">
-                <input type="radio" name="civilite" value="male" />Mr
-                <input type="radio" name="civilite" value="female" />Mme
-                <p>
-                    <label>Nom :</label>
-                    <input type="text" name="nom" placeholder="Nom" required>
-                </p>
-                <p><label>Prénom :</label>
-                    <input type="text" name="prenom" placeholder="Prénom" required>
-                </p>
-                <p>
-                    <label>Télephone</label>
-                    <input type="tel" name="Télephone" placeholder="N° de télephone" required>
-                </p>
-                <p>
-                    <label>e-mail :</label>
-                    <input type="email" name="email" placeholder="votre.email@domaine.com" required>
-                </p>
-                <p>
-                    <label>Confirmation e-mail :</label>
-                    <input type="email" id="email_repeat" placeholder="Confirmez votre email">
-                </p>
-                <p>
-                    <label>Nombre de personnes :</label>
-                    <input type="number" name="personnes" value="1" min="1" max="20" required>
-                </p>
-            </div>
-        </div>
-        <div class="element">
-            <div class="commentaires">
-                <p>
-                    <label>commentaires :</label>
-                </p>
-                <p>
-                    <textarea name="textarea" placeholder="Vos commentaires"></textarea>
-                </p>
-                <div class="submit">
+    <form name="form1" method="post">
+        <div id="element_form">
+            <div class="element">
+                <h2>Formulaire de réservation</h2>
+                <div class="civilite1">
+                    <input type="radio" name="civilite" value="male" />Mr
+                    <input type="radio" name="civilite" value="female" />Mme
                     <p>
-                        <input type="submit" value="Envoyer" class="envoi" />
+                        <label>Nom :</label>
+                        <input type="text" name="nom" value="" placeholder="Nom" required>
                     </p>
+                    <p><label>Prénom :</label>
+                        <input type="text" name="prenom" placeholder="Prénom" required>
+                    </p>
+                    <p>
+                        <label>Télephone</label>
+                        <input type="tel" name="Télephone" placeholder="09-09-09-09-09"
+                            pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" required>
+                    </p>
+                    <p>
+                        <label>e-mail :</label>
+                        <input type="email" name="email" value="" placeholder="votre.email@domaine.com" required>
+                    </p>
+                    <p>
+                        <label>Confirmation e-mail :</label>
+                        <input type="email" id="email_repeat" placeholder="Confirmez votre email" required>
+                    </p>
+                    <div>
+                        <label>Jour de vôtre réservation :</label>
+                        <input type="date" id="resa" name="resa" required>
+                        <p>
+                            <label>Heure d'arrivée :</label>
+                            <input type="time" name="heure" required>
+                        </p>
+                        <p>
+                            <label>Nombre de personnes :</label>
+                            <input type="number" name="personnes" value="" min="1" max="20" required>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="element">
+                <div class="commentaires">
+                    <p>
+                        <label>commentaires :</label>
+                    </p>
+                    <p>
+                        <textarea name="textarea" placeholder="Vos commentaires"></textarea>
+                    </p>
+                    <div class="submit">
+                        <p>
+                            <input type="submit" name="bouton" class="envoi" value="Envoyer" onCLICK="controle(form1)">
+                        </p>
+                        <p>
+                            <input type="reset" value="Réinitialiser le formulaire">
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</form>
+    </form>
     <div id="contact">
-        
-            <div class="adresse">
-                <p>
-                    La Fabrique du Petit Mangé<br />
-                    Rue de la poupée qui tousse<br />
-                    64400 Oloron Sainte Marie
-                </p>
-            
-            </div>
-            <div class="telephone">
-                
-                    <P>
-                        Télephone :<br />
-                        00.00.00.00.00
-                    </P>
-                    <p>
-                        Fax :<br />
-                        00.00.00.00.00
-                    </p>
-                </div>
-            
-            <div class="mail">
-                
-                    <P>
-                        
-                        <a href="mailto:e.mail@domaine.com">Envoyer un mail</a>
-                    </P>
-                </div>
-            
-        
+        <div class="adresse">
+            <p>
+                La Fabrique du Petit Mangé<br />
+                Rue de la poupée qui tousse<br />
+                64400 Oloron Sainte Marie
+            </p>
+        </div>
+        <div class="telephone">
+            <P>
+                Télephone :<br />
+                00.00.00.00.00
+            </P>
+            <p>
+                Fax :<br />
+                00.00.00.00.00
+            </p>
+        </div>
+        <div class="mail">
+            <P>
+                <a href="mailto:e.mail@domaine.com">Envoyer un mail</a>
+            </P>
+        </div>
     </div>
     <footer class="element">
-        <div id="horaires">
+        <div class="horaires">
             <ul class="foot">
                 <li>Horaires d'ouverture :</li>
                 <li>Du Mardi au Samedi</li>
@@ -114,31 +125,27 @@
                 <li>Fermé Dimanche<br /> et Lundi</li>
             </ul>
         </div>
-        <div id="logo">
+        <div class="logo">
             <p span class="underline">
                 Pour nous suivre :
             </p>
-            <div id="logo_fb">
-                <a class="margelogo" href="https://www.pinterest.fr/" target="_blank"><img src="image/pint.png"
-                        alt="logo pinterest" title="Pinterest"></a>
-            </div>
-            <div id="logo_pint">
+            <p>
                 <a class="margelogo" href="https://fr-fr.facebook.com/" target="_blank"><img src="image/fb.png"
                         alt="logo facebook" title="Facebook"></a>
-            </div>
-            <div id="logo_insta">
+                <a class="margelogo" href="https://www.pinterest.fr/" target="_blank"><img src="image/pint.png"
+                        alt="logo pinterest" title="Pinterest"></a>
                 <a class="margelogo" href="https://www.instagram.com/?hl=fr" target="_blank"><img src="image/insta.png"
                         alt="logo instagram" title="Instagram"></a>
-            </div>
+            </p>
         </div>
-        <div id="copy">
-            <p>Copyright <br />© 2019</p>
-        </div>
-        <div id="map">
+        <div class="map">
             <iframe id="plan"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2908.871121798688!2d-0.6121993620405891!3d43.19121497235811!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd56ffed4530c13f%3A0x717315a1a86db6a!2sLe%20Vigny!5e0!3m2!1sfr!2sfr!4v1568920284967!5m2!1sfr!2sfr"
                 width="200" height="200" frameborder="0" style="border:0;" allowfullscreen="">
             </iframe>
+        </div>
+        <div class="copy">
+            <p>Copyright <br />© 2019</p>
         </div>
     </footer>
 </body>

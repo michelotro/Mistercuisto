@@ -6,16 +6,14 @@ body{
 }
 .img{
     width: 60vw;
-    margin-left: 18vw;
+    margin-left: 20vw;
     box-shadow: 15px 15px 10px black;
 }
 h1{ 
-    position: relative;
-    margin-bottom: -200px;
-    margin-left: 27.5vw;
+    margin:auto;
     margin-top: -50px;
     background-color: black;
-    display: inline-block;
+    width: 60vw;
     padding: 50px 50px 10px 50px;
     font-size: 1.5em;
     text-align: center;
@@ -27,6 +25,7 @@ h2{
     text-align: center;
     margin-left: 5vw;
     margin-right: 5vw;
+    margin:auto;
 }
 h3{
     margin-left: 1vw;
@@ -45,37 +44,33 @@ h4{
 #element{
     background: rgba(236, 236, 236, 0.6);
     border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
     margin: auto;
     box-shadow: 15px 15px 10px black;
-    
-        font-size: 1.2em;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height:10vh;
-        margin: auto;   
-        list-style: none;  
-    
-    
+    font-size: 1.2em;
+    height:15vh; 
+    list-style: none;  
+    margin-bottom: 5vh;
 }
-
 a{
     text-decoration:none; color: black;
 }
 a:hover{
-    text-decoration: underline; font-size: 1.5em
+    text-decoration: underline; font-size: 1.3em
 }
 a:visited{
     color: black;
 }
-
 section{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin: auto;
-    margin-bottom: 5vh;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    margin:auto;
 }
 .img_flot{
     float: left; 
@@ -88,22 +83,23 @@ section{
 .element1{
     background: rgba(236, 236, 236, 0.6);
     border-radius: 20px;
-    margin-top: 5vh;
-    height: 180vh;
     overflow: auto;
     box-shadow: 15px 15px 10px black;
-    text-align: center;
+    margin:auto;
+    padding-left: 2vw; 
+    padding-right: 2vw;
+    margin-bottom:5vh;
 }
 .element2{
     background: rgba(236, 236, 236, 0.6);
     border-radius: 20px;
-    max-width: 30vw;
-    padding: 5vh 5vw 0vh 5vw;
-    text-align: center;
-    margin-top: 5vh;
-    height: 175vh;
+    margin: auto;
+    padding-left: 2vw; 
+    padding-right: 2vw;
+    text-align: left;
     overflow: auto;
     box-shadow: 15px 15px 10px black;
+    margin-bottom:5vh;
 }
 .chef{
     margin: auto;
@@ -113,82 +109,91 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    margin:auto;
 }
 .foot{
     list-style: none;
     font-size: 1em;
     margin: auto;
-    
 }
-#parag{
-    display: flex;
-    flex-direction: column;
-}
+
 #map{
-    padding: 2vh 2vw 2vh 2vw;    
+    padding: 2vh 2vw 2vh 2vw;
+    background: rgba(236, 236, 236, 0.6);
+    border-radius: 20px;    
 }
 .underline{
-    position: absolute;
-    margin:auto;
-    top: -10vh;
-    left: 3vw;
     text-decoration: underline;
+    text-align: center;
+    margin:auto;
 }
-#logo{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
+
 
         /*-----------------------Fin page d'acceuil --------------------------------------------------------------------------------*/
 
  /*---------------------Recettes------------------------------------*/
  
- #navrecettes{
-    margin-top: 5vh;
-    box-shadow: 15px 15px 10px black;
+#navrecettes{
     width: 60vw;
-    margin: 5vh auto 5vh auto;
- }
- #mardi{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    margin-left: 20vw;
+    margin: auto;
 }
- .element_recettes{
+.element_recettes{
     background: rgba(236, 236, 236, 0.6);
     border-radius: 20px;
     text-align: left;
     box-shadow: 15px 15px 10px black;
-    display: inline;
+    padding: 0vh 2vw 2vh 2vw;
+    margin: auto;
 }
- .element_ingred{
+.element_ingred{
     background: rgba(236, 236, 236, 0.6);
     border-radius: 20px;
     margin: auto;
-    text-align: right;
+    text-align: left;
     box-shadow: 15px 15px 10px black;
     list-style: none;
     text-align: left;
-    margin-left: 5vw;
-    
- }
+    max-width: 500px;
+   
+}
  .img_recette{
-     
-     margin-left:  4.5vw;
-     height: 50%;
-     width: 50%;
+    height: 60%;
+    width: 60%;
+ }
+ .img_recette2{
+    height: 30%;
+    width: 30%;
  }
  #lien{
-    color: green;
+    color: maroon;
 }
+#mardi{
+    padding-left: 3vw;
+}
+#mercredi{
+    padding-left: 3vw;
+}
+#jeudi{
+    padding-left: 3vw;
+}
+#vendredi{
+    padding-left: 3vw;
+}
+#samedi{
+    padding-left: 3vw;
+}
+
  /*--------------------- Fin Recettes------------------------------------*/
 
  /*-------------------Contact--------------------------------------------------------------*/
+
+
  #element_form{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
+    flex-wrap: wrap;
     text-align: right;
     margin: auto;
     margin-top: 5vh;
@@ -197,39 +202,54 @@ footer{
  .commentaires{
      text-align: left;
      margin-top: 5vh;
-     height: 90vh;
+     height: 80vh;
      width: 50vw;
      padding-left:2vw;
  }
  .civilite1{
      padding-right: 2vw;
+     padding-bottom: 5vh;
  }
  textarea{
-     margin-left: 1vw;
-     height: 45vh;
-     width: 45vw;
+     margin-left: 4vw;
+     height: 50vh;
+     width: 40vw;
  }
  .submit{
     text-align: center;
     margin: auto;
-    padding-top: 5vh;
- }
+    margin-top: 10vh;
+}
+input:focus, textarea:focus {
+    background   : rgba(241, 228, 111, 0.966);
+    box-shadow: 5px; 
+    outline: 8px ridge rgba(106, 104, 107, 0.6);
+}
+ input:required:invalid {
+    border-color: #c00000;
+}
+input:required:valid {
+    border-color: #20ff0c;
+}
  #contact{
     background: rgba(236, 236, 236, 0.6);
     border-radius: 20px;
-    margin: auto;
     box-shadow: 15px 15px 10px black;
-     display: flex;
-     flex-direction: row;
-     justify-content: space-around;
-     align-items: center;
-     margin: auto;
-     margin-bottom:5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-bottom:5vh;
  }
+
+
  /*-------------------------------------Fin contact------------------------------------------*/
 
  /*----------------Livre d'or-----------------------------------*/
  
+
 #element_livre{
     display: flex;
     flex-direction: row;
@@ -238,18 +258,23 @@ footer{
     margin: auto;
     margin-top: 5vh;
     margin-bottom: 5vh;
- }
- .avis{
+}
+.avis{
     text-align: left;
-     margin-top: 5vh;
-     height: 90vh;
-     width: 50vw;
-     padding-left:2vw;
+    margin-top: 5vh;
+    height: 90vh;
+    width: 50vw;
+    padding-left:2vw;
 }
 .textarea{
     margin-left: 1vw;
     height: 45vh;
     width: 45vw;
+}
+.img_livredor{
+    float: left;
+    height: 50%; 
+    width: 50%;
 }
 
 

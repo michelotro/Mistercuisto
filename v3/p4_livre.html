@@ -20,57 +20,58 @@
             <li><a href="p3_form.html">Réservations</a></li>
             <li><a href="#plan">Plan d'accès</a></li>
             <li><a href="p4_livre.html">Livre d'Or</a></li>
-            <li><a href="#contact">Nous contacter</a></li>
+            <li><a href="p3_form.html#contact">Nous contacter</a></li>
         </ul>
     </nav>
     <form method="post">
-            <div class="element">
-    <div id="element_livre">
-            <div class="civilite1">
-            <h2>Livre d'Or :</h2>
-            
-                <input type="radio" name="civilite" value="male" />Mr
-                <input type="radio" name="civilite" value="female" />Mme
-                <p>
-                    <label>Nom :</label>
-                    <input type="text" name="nom" placeholder="Nom">
-                </p>
-                <p><label>Prénom :</label>
-                    <input type="text" name="prenom" placeholder="Prénom" required>
-                </p>
-                <p>
-                    <label>Télephone</label>
-                    <input type="tel" name="Télephone" placeholder="N° de télephone" >
-                </p>
-                <p>
-                    <label>e-mail :</label>
-                    <input type="email" name="email" placeholder="votre.email@domaine.com">
-                </p>
-                <p>
-                    <label>Confirmation e-mail :</label>
-                    <input type="email" id="email_repeat" placeholder="Confirmez votre email">
-                </p>
-            </div>
-            
-            <div class="avis">
-                <p>
-                    <label>Faites nous part de votre avis :</label>
-                </p>
-                <p class="textarea">
-                    <textarea name="textarea" placeholder="Vos commentaires"></textarea>
-                </p>
-                <div class="submit">
+        <div class="element">
+            <div id="element_livre">
+                <div class="civilite1">
+                    <h2>Livre d'Or</h2>
                     <p>
-                        <input type="submit" value="Envoyer" class="envoi" />
+                        <img class="img_livredor" src="image/livredor.jpg" alt="Livre d'Or">
+                    </p>
+                    <input type="radio" name="civilite" value="male" />Mr<br/>
+                    <input type="radio" name="civilite" value="female" />Mme
+                    <p>
+                        <label>Nom :</label>
+                        <input type="text" name="nom" placeholder="Nom" required>
+                    </p>
+                    <p><label>Prénom :</label>
+                        <input type="text" name="prenom" placeholder="Prénom" required>
+                    </p>
+                    <p>
+                        <label>Télephone</label>
+                        <input type="tel" name="Télephone" placeholder="09-09-09-09-09"
+                            pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}">
+                    </p>
+                    <p>
+                        <label>e-mail :</label>
+                        <input type="email" name=" e-mail" placeholder="votre.email@domaine.com">
+                    </p>
+                    <p>
+                        <label>Confirmation e-mail :</label>
+                        <input type="email" id="email_repeat" placeholder="Confirmez votre email">
                     </p>
                 </div>
+                <div class="avis">
+                    <p>
+                        <label>Faites nous part de votre avis :</label>
+                    </p>
+                    <p class="textarea">
+                        <textarea name="textarea" placeholder="Vos commentaires" required></textarea>
+                    </p>
+                    <div class="submit">
+                        <p>
+                            <input type="submit" value="Envoyer" class="envoi" />
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    
-</form>
+    </form>
     <footer class="element">
-        <div id="horaires">
+        <div class="horaires">
             <ul class="foot">
                 <li>Horaires d'ouverture :</li>
                 <li>Du Mardi au Samedi</li>
@@ -79,31 +80,27 @@
                 <li>Fermé Dimanche<br /> et Lundi</li>
             </ul>
         </div>
-        <div id="logo">
+        <div class="logo">
             <p span class="underline">
                 Pour nous suivre :
             </p>
-            <div id="logo_fb">
-                <a class="margelogo" href="https://www.pinterest.fr/" target="_blank"><img src="image/pint.png"
-                        alt="logo pinterest" title="Pinterest"></a>
-            </div>
-            <div id="logo_pint">
+            <p>
                 <a class="margelogo" href="https://fr-fr.facebook.com/" target="_blank"><img src="image/fb.png"
                         alt="logo facebook" title="Facebook"></a>
-            </div>
-            <div id="logo_insta">
+                <a class="margelogo" href="https://www.pinterest.fr/" target="_blank"><img src="image/pint.png"
+                        alt="logo pinterest" title="Pinterest"></a>
                 <a class="margelogo" href="https://www.instagram.com/?hl=fr" target="_blank"><img src="image/insta.png"
                         alt="logo instagram" title="Instagram"></a>
-            </div>
+            </p>
         </div>
-        <div id="copy">
-            <p>Copyright <br />© 2019</p>
-        </div>
-        <div id="map">
+        <div class="map">
             <iframe id="plan"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2908.871121798688!2d-0.6121993620405891!3d43.19121497235811!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd56ffed4530c13f%3A0x717315a1a86db6a!2sLe%20Vigny!5e0!3m2!1sfr!2sfr!4v1568920284967!5m2!1sfr!2sfr"
                 width="200" height="200" frameborder="0" style="border:0;" allowfullscreen="">
             </iframe>
+        </div>
+        <div class="copy">
+            <p>Copyright <br />© 2019</p>
         </div>
     </footer>
 </body>
