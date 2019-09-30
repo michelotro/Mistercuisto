@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Pinyon+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="menuv3.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant gastronomique</title>
 </head>
 
@@ -25,49 +26,40 @@
     </nav>
     <form method="post">
         <div class="element">
+            <h2>Livre d'Or</h2>
             <div id="element_livre">
-                <div class="civilite1">
-                    <h2>Livre d'Or</h2>
+                <div class="civilite2">
                     <p>
                         <img class="img_livredor" src="image/livredor.jpg" alt="Livre d'Or">
+
+                        <label for="nom">Nom :</label>
+                        <input type="text" name="nom" id="nom" placeholder="Nom" required>
                     </p>
-                    <input type="radio" name="civilite" value="male" />Mr<br/>
-                    <input type="radio" name="civilite" value="female" />Mme
-                    <p>
-                        <label>Nom :</label>
-                        <input type="text" name="nom" placeholder="Nom" required>
-                    </p>
-                    <p><label>Prénom :</label>
-                        <input type="text" name="prenom" placeholder="Prénom" required>
+                    <p><label for="prenom">Prénom :</label>
+                        <input type="text" name="prenom" id="prenom" placeholder="Prénom" required>
                     </p>
                     <p>
-                        <label>Télephone</label>
-                        <input type="tel" name="Télephone" placeholder="09-09-09-09-09"
-                            pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}">
+                        <label for="telephone">Télephone</label>
+                        <input type="tel" name="Telephone" id="telephone" placeholder="09-09-09-09-09"
+                            pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" required>
                     </p>
                     <p>
-                        <label>e-mail :</label>
-                        <input type="email" name=" e-mail" placeholder="votre.email@domaine.com">
+                        <label for="email">e-mail :</label>
+                        <input type="email" name=" email" id="email" placeholder="votre.email@domaine.com" required>
                     </p>
                     <p>
-                        <label>Confirmation e-mail :</label>
-                        <input type="email" id="email_repeat" placeholder="Confirmez votre email">
+                        <label for="confirm">Confirmation e-mail :</label>
+                        <input type="email" name="confirm" id="confirm" placeholder="Confirmez votre email">
+                    </p>
+                    <p id="avis">
+                        <input type="submit" value="Envoyer" class="envoi" />
                     </p>
                 </div>
-                <div class="avis">
-                    <p>
-                        <label>Faites nous part de votre avis :</label>
-                    </p>
-                    <p class="textarea">
-                        <textarea name="textarea" placeholder="Vos commentaires" required></textarea>
-                    </p>
-                    <div class="submit">
-                        <p>
-                            <input type="submit" value="Envoyer" class="envoi" />
-                        </p>
-                    </div>
-                </div>
+                <p>
+                    <textarea name="avis" placeholder="Vos commentaires" required></textarea>
+                </p>
             </div>
+        </div>
         </div>
     </form>
     <footer class="element">

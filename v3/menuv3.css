@@ -1,3 +1,16 @@
+@media all and (max-width: 480px){
+    .img{display:none;} 
+    header{font-size: 0.8em;}
+    nav{ display: inline;font-size: 0.7em;}
+    section{font-size: 0.8em;}
+    .img_livredor{display: none;}
+    #element_livre{display: flex; flex-direction: column; justify-content: center;flex-wrap: wrap;}
+}
+@media (min-width:601px) and (max-width: 768px){ 
+    nav{font-size: 0.9em;}
+    section{font-size: 1em;}
+}
+
 body{
     background-image: url(image/background-tile.png) ;
     font-family: 'Pinyon Script', cursive;
@@ -154,7 +167,6 @@ footer{
     text-align: left;
     box-shadow: 15px 15px 10px black;
     list-style: none;
-    text-align: left;
     max-width: 500px;
    
 }
@@ -192,6 +204,7 @@ footer{
 
  #element_form{
     display: flex;
+    flex-direction: row;    
     justify-content: space-around;
     flex-wrap: wrap;
     text-align: right;
@@ -200,25 +213,25 @@ footer{
     margin-bottom: 5vh;
  }
  .commentaires{
-     text-align: left;
      margin-top: 5vh;
-     height: 80vh;
-     width: 50vw;
-     padding-left:2vw;
+     height: 65vh;
+    padding: 0vh 5vw 0vh 5vw;
+     margin: auto;
+   
  }
  .civilite1{
-     padding-right: 2vw;
-     padding-bottom: 5vh;
- }
+     margin: auto;
+     padding: 4vh 5vw 4vh 5vw
+ }  
  textarea{
-     margin-left: 4vw;
-     height: 50vh;
-     width: 40vw;
+    
+    height: 40vh;
+    width:40vw
  }
  .submit{
     text-align: center;
     margin: auto;
-    margin-top: 10vh;
+    margin-top: 5vh;
 }
 input:focus, textarea:focus {
     background   : rgba(241, 228, 111, 0.966);
@@ -256,26 +269,28 @@ input:required:valid {
     justify-content: center;
     text-align: right;
     margin: auto;
-    margin-top: 5vh;
+    margin-top: 10vh;
     margin-bottom: 5vh;
 }
-.avis{
-    text-align: left;
-    margin-top: 5vh;
-    height: 90vh;
-    width: 50vw;
-    padding-left:2vw;
+
 }
 .textarea{
-    margin-left: 1vw;
-    height: 45vh;
+    text-align: left;
+    height: 90vh;
     width: 45vw;
+    padding-right: 2vw;
 }
 .img_livredor{
     float: left;
-    height: 50%; 
-    width: 50%;
+    height: 40%; 
+    width: 40%;
+    
+
+} 
+#avis{
+    margin: 15vh 0vw 10vh;
 }
+    
 
 
 
