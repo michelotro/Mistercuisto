@@ -1,1 +1,1 @@
-* <a href="Mistercuisto/v3/index.html">Mister Cuisto</a>
+* <a href="v3/index.html">Mister Cuisto</a>
